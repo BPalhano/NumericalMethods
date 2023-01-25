@@ -47,7 +47,7 @@ string IEEE_builter(float read){
   
   string bin = mirrorbin; // then, initialize the output with this mirrored copy,
 
-  for(int i = 0; i < bin.length(); i++){ // and mirror the mirrored copy.
+  for(int i = 0; i < (bin.length()); i++){ // and mirror the mirrored copy.
     bin[i] = mirrorbin[mirrorbin.length() - 1 -i];
   }
 
@@ -64,3 +64,8 @@ int main(void) { // test instance;
 
   return 0;
 }
+
+/* templeitizar a função para por os parâmetros.
+   sugestão: invés de fazer o codificador do jeito que foi feito, entrar com o
+   número de bits do expoente e da mantissa, escrever a função que converte o número inserido para qualquer composição dada, desde que caiba.
+   com uma função, fazer todas as precisões (de 8 as 126 bits). */
